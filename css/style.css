@@ -1,0 +1,776 @@
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced smooth scrolling with custom timing */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Optional: Custom scroll padding to account for fixed navigation */
+html {
+    scroll-padding-top: 80px;
+    /* Adjust based on your nav height */
+}
+
+/* For better browser support, you can also add this */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* If you want even smoother scrolling with custom easing */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/* Add padding to body to compensate for fixed nav */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding-top: 0;
+    /* Adjust this value based on your nav height */
+    background-color: #d6d6d6;
+    -webkit-overflow-scrolling: touch;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #3a3333;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.nav-link {
+    color: #d6d6d6;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: #d6d6d6;
+    color: #3a3333;
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: #d6d6d6;
+    color: #3a3333;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+}
+
+nav a {
+    color: #d6d6d6;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d8d5d5;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 100px;
+    color: #222020;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.section {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    background-color: #d6d6d6;
+}
+
+
+.section h2 {
+    color: #3a3333;
+}
+
+.section-practicum {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    background-color: #3a3333;
+}
+
+.section-practicum p {
+    color: #d6d6d6;
+    line-height: 2.0;
+}
+
+.section-practicum h1,
+.section-practicum h2 {
+    color: #d6d6d6;
+}
+
+/* Typing Animation */
+.typing-animation {
+    display: inline-block;
+    min-height: 1.2em;
+}
+
+#typed-text .letter {
+    opacity: 0;
+    animation: letterFadeIn 0.5s ease-in-out forwards;
+}
+
+.cursor {
+    display: inline-block;
+    /* background-color: #3a3333; */
+    margin-left: 3px;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes letterFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 3.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-description-container {
+    position: relative;
+}
+
+.see-more-btn {
+    background: #3a3333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    /* Show by default on all devices */
+}
+
+.see-more-btn:hover {
+    color: #3a3333;
+}
+
+/* Default state - show preview, hide full text */
+.description-preview {
+    display: inline;
+}
+
+.description-full {
+    display: none;
+}
+
+/* Remove the media queries that were hiding the button on desktop */
+/* Now the button will appear on all screen sizes */
+
+
+
+/* PDF Modal specific styles */
+.pdf-modal-content {
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.pdf-container {
+    flex: 1;
+    padding: 0;
+    overflow: hidden;
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Make project containers look clickable */
+.project-container {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive PDF modal */
+@media (max-width: 768px) {
+    .pdf-modal-content {
+        width: 95%;
+        height: 85vh;
+    }
+
+    .modal-header h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+.projects,
+.certificates,
+.appendices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.final-report {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+}
+
+.project-item,
+.appendix-item {
+    background-color: #3a3333;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d6d6d6;
+    border-radius: 10px;
+}
+
+.report-item {
+    background-color: #d6d6d6;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3a3333;
+    overflow: hidden;
+    border-radius: 10px ;
+    margin-bottom: 20px;
+}
+
+.report-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.skills,
+.final-report {
+    background-color: #3a3333;
+    color: #d6d6d6;
+    padding: 30px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    margin-right: 15px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills h2 {
+    color: #d6d6d6
+}
+
+
+.certificates {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.certificate-item {
+    background-color: #f5f5f5;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-image {
+    width: 100%;
+    max-width: 400px;
+    max-height: 285px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate-image:hover {
+    transform: scale(1.05);
+}
+
+.certificate-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.certificate-description {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+
+.footer {
+    background-color: #3a3333;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #3a3333;
+    text-decoration: none;
+}
+
+
+.project-container {
+    margin-bottom: 2rem;
+}
+
+.project-container h3,
+.project-container p {
+    margin: 10px;
+}
+
+.project-title {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-description {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-image {
+        max-width: 100%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image {
+        height: 150px;
+    }
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 16px;
+    background-color: #3a3333;
+    color: #d6d6d6;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #d6d6d6;
+    color: #3a3333;
+}
+
+.social-link:first-child {
+    background-color: #d6d6d6;
+    color: #3a3333;
+}
+
+.social-link:first-child:hover {
+
+    background-color: #3a3333;
+    color: #d6d6d6;
+}
+
+.social-link:last-child {
+    background-color: #d6d6d6;
+    color: #3a3333;
+}
+
+.social-link:last-child:hover {
+
+    background-color: #3a3333;
+    color: #d6d6d6;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d6d6d6;
+    color: #3a3333;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #3a3333;
+    color: #d6d6d6;
+
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.skill-category h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: #3a3333;
+    color: #d6d6d6;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background: #d6d6d6;
+    color: #3a3333;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-category {
+        padding: 1.5rem;
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Modal opening animation */
+.modal.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal closing animation */
+.modal.hide {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content {
+    position: relative;
+    margin: 2% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    object-fit: contain;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Make appendix items look clickable */
+.appendix-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appendix-item:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    color: #222020;
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    #modalImage {
+        max-height: 80vh;
+    }
+}
+
+.project-link {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.project-link:hover .project-image {
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.project-link::after {
+    content: "▶ Watch Video";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-link:hover::after {
+    opacity: 1;
+}

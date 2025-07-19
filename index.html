@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Rey B. Miran</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#certificates" class="nav-link">CERTIFICATES</a>
+        <a href="#final-report" class="nav-link">PRACTICUM</a>
+        <a href="#appendices" class="nav-link">APPENDICES</a>
+    </nav>
+
+    <div class="header" id="about">
+        <h2>Hello! My name is</h2>
+        <h1 class="typing-animation">
+            <span id="typed-text"></span>
+            <span class="cursor">|</span>
+        </h1>
+        <p class="fade-in-text">B.S. Information Technology</p>
+        <p class="fade-in-text"><em>Mapua Malayan Colleges Laguna</em></p>
+    </div>
+
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+
+
+    <div class="section" id="projects">
+        <h1>My Projects</h1>
+        <div class="projects">
+
+            <div class="project-container"
+                onclick="openPDFModal('assets/inkpress.pdf', 'Web System for InkPress Printing Services')"
+                alt="Light Motion Sensor with Manual Override" class="project-image">
+                <img src="images/inkpress.jpg" alt="Web System for InkPress Printing Services" class="project-image">
+                <div class="skill-tags">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">ASP.NET</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+                <h3 class="project-title">Web System for InkPress Printing Services</h3>
+                <p class="project-description-year"><em>Machine Problem: S.Y. 2022 - 2023</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">A custom web application developed for
+                            InkPress Printing Services to streamline order management, customer tracking, and service
+                            requests.</span>
+                        <span class="description-full" style="display: none;">A custom web application developed for
+                            InkPress Printing Services to streamline order management, customer tracking, and service
+                            requests. The system enables clients to place orders online, while allowing staff to manage
+                            jobs, update order statuses, and generate reports — improving efficiency and customer
+                            service.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+            <div class="project-container">
+                <a href="https://youtu.be/iea9dWZcAGQ" target="_blank" class="project-link">
+                    <img src="images/wwtbam.png" alt="Smart Access Control and Monitoring System" class="project-image">
+                </a>
+                <div class="skill-tags">
+                    <span class="skill-tag">IoT</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+                <h3 class="project-title">Smart Access Control and Monitoring System</h3>
+                <p class="project-description-year"><em>S.Y. 2023 - 2024</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">This project incorporates an RFID sensor and key to
+                            authenticate authorized persons within an establishment. When an authorized UID is scanned
+                            by the RFID, a green light will turn on...</span>
+                        <span class="description-full" style="display: none;">This project incorporates an RFID sensor
+                            and key to authenticate authorized persons within an establishment. When an authorized UID
+                            is scanned by the RFID, a green light will turn on. If the sensor detects an unauthorized
+                            attempt, a red light will turn on, and the alarm system will engage. The room's LEDs can be
+                            turned off and on via the dashboard. Additionally, the project includes a dedicated mobile
+                            app that is only accessible by the administrator, featuring comprehensive control over
+                            lights and sensors, a dashboard displaying all data of entries, and a constant temperature
+                            and humidity display.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <a href="https://youtu.be/qmJBzWtjVmo" target="_blank" class="project-link">
+                    <img src="images/8x8.png" alt="8x8 LED Matrix Display" class="project-image">
+                </a>
+                <div class="skill-tags">
+                    <span class="skill-tag">Raspberry Pi</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">IoT</span>
+                    <span class="skill-tag">SQLite</span>
+                </div>
+                <h3 class="project-title">8x8 LED Matrix Display</h3>
+                <p class="project-description-year"><em>Machine Problem: S.Y. 2023 - 2024</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">An IoT project featuring a Raspberry Pi
+                            and 8x8 LED matrix display controlled via a Flask web application with SQLite.</span>
+                        <span class="description-full" style="display: none;">An IoT project featuring a Raspberry Pi
+                            and 8x8 LED matrix display controlled via a Flask web application with SQLite. Users can
+                            display custom patterns or characters by manually setting LEDs, entering text, or selecting
+                            saved patterns. The web interface also includes options to define character appearances and
+                            manage device settings like shutdown or restart.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+            <div class="project-container"
+                onclick="openPDFModal('assets/lms.pdf', 'Light Motion Sensor with Manual Override')"
+                alt="Light Motion Sensor with Manual Override" class="project-image">
+                <img src="images/lms.jpg" alt="Smart Access Control and Monitoring System" class="project-image">
+                <div class="skill-tags">
+                    <span class="skill-tag">IoT</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+                <h3 class="project-title">Light Motion Sensor with Manual Override</h3>
+                <p class="project-description-year"><em>Machine Problem: S.Y. 2023 - 2024</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">This project is designed to assist in
+                            automatically or manually illuminating areas based on the user's preferences. It utilizes an
+                            LDR (Light Dependent Resistor) to detect changes in ambient light levels.</span>
+                        <span class="description-full" style="display: none;">This project is designed to assist in
+                            automatically or manually illuminating areas based on the user's preferences. It utilizes an
+                            LDR (Light Dependent Resistor) to detect changes in ambient light levels. When a significant
+                            change is detected, the system can automatically turn the lights on or off accordingly.
+                            Alternatively, users can manually control the lighting through a connected interface.
+                            </br></br>
+                            In addition to its lighting control capabilities, the system records each instance where a
+                            change in light level occurs, providing valuable data for monitoring and analysis. This
+                            feature is especially useful for energy efficiency tracking, security purposes, or smart
+                            home integration.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+            <div class="project-container"
+                onclick="openPDFModal('assets/sacms.pdf', 'Smart Access Control and Monitoring System')"
+                alt="Smart Access Control and Monitoring System" class="project-image">
+                <img src="images/sacms.jpg" alt="Smart Access Control and Monitoring System" class="project-image">
+                <div class="skill-tags">
+                    <span class="skill-tag">IoT</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+                <h3 class="project-title">Smart Access Control and Monitoring System</h3>
+                <p class="project-description-year"><em>Machine Problem: S.Y. 2023 - 2024</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">This project incorporates an RFID sensor and key to
+                            authenticate authorized persons within an establishment. When an authorized UID is scanned
+                            by the RFID, a green light will turn on...</span>
+                        <span class="description-full" style="display: none;">This project incorporates an RFID sensor
+                            and key to authenticate authorized persons within an establishment. When an authorized UID
+                            is scanned by the RFID, a green light will turn on. If the sensor detects an unauthorized
+                            attempt, a red light will turn on, and the alarm system will engage. The room's LEDs can be
+                            turned off and on via the dashboard. Additionally, the project includes a dedicated mobile
+                            app that is only accessible by the administrator, featuring comprehensive control over
+                            lights and sensors, a dashboard displaying all data of entries, and a constant temperature
+                            and humidity display.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+            <div class="project-container"
+                onclick="openPDFModal('assets/aqms.pdf', 'Air Quality Checking and Tracking for Environmental Compliance')"
+                alt="Air Quality Checking and Tracking for Environmental Compliance" class="project-image">
+                <img src="images/aqms.jpg" alt="Air Quality Checking and Tracking for Environmental Compliance"
+                    class="project-image">
+                <div class="skill-tags">
+                    <span class="skill-tag">IoT</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+                <h3 class="project-title">Air Quality Checking and Tracking for Environmental Compliance</h3>
+                <p class="project-description-year"><em>Capstone Project: S.Y. 2024 - 2025</em></p>
+                <div class="project-description-container">
+                    <p class="project-description">
+                        <span class="description-preview">This project involved the development and deployment of an Air
+                            Quality Monitoring System designed to assist Cabuyao City in independently monitoring air
+                            pollution levels in compliance with the Philippine Clean Air Act...</span>
+                        <span class="description-full" style="display: none;">This project involved the development and
+                            deployment of an Air Quality Monitoring System designed to assist Cabuyao City in
+                            independently monitoring air pollution levels in compliance with the Philippine Clean Air
+                            Act. Our team collaborated with the City Environment and Natural Resources Office (CENRO) to
+                            assess the current environmental challenges and develop a user-friendly, cost-effective
+                            solution tailored to local needs.</br></br>
+
+                            The system utilizes IoT-based sensors to collect real-time data on air pollutants, including
+                            Carbon Monoxide (CO), Carbon Dioxide (CO2), Nitrogen Dioxide (NO2), Sulfur Dioxide (SO2),
+                            temperature, and humidity. The collected data is transmitted and visualized through a
+                            centralized web interface that allows city officials to track trends, generate reports, and
+                            make data-driven environmental decisions.</br></br>
+
+                            By empowering the local government with its own monitoring capabilities, the project
+                            enhances transparency, public awareness, and compliance with national air quality standards
+                            — ultimately contributing to a healthier environment for Cabuyao residents.</span>
+                    </p>
+                    <button class="see-more-btn" onclick="toggleDescription(this, event)">See More</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-content pdf-modal-content">
+            <div class="modal-header">
+                <h3 id="pdfModalTitle">Project Details</h3>
+                <span class="close" onclick="closePDFModal()">&times;</span>
+            </div>
+            <div class="pdf-container">
+                <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button onclick="downloadPDF()" class="download-btn">Download PDF</button>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+    <div class="section skills" id="skills">
+        <h1>My Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-icon">🌐</div>
+                <h3>Frontend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">📚</div>
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">jQuery</span>
+                    <span class="skill-tag">ASP.NET</span>
+                    <span class="skill-tag">SweetAlert2</span>
+                    <span class="skill-tag">Bootstrap</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">🔌</div>
+                <h3>Internet of Things (IoT)</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Arduino</span>
+                    <span class="skill-tag">ESP32</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-icon">🛠️</div>
+                <h3>Tools & Tech Stack</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Visual Studio Code</span>
+                    <span class="skill-tag">Visual Studio Community</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+
+
+
+    <div class="section" id="certificates">
+        <h1>My Certificates</h2>
+            <div class="certificates">
+                <div class="certificate-item">
+                    <img src="certificates/cert1.png" alt="CompTIA Certification"
+                        onclick="openModal('certificates/cert1.png')" class="certificate-image">
+
+                    <h3 class="certificate-title">CompTIA ITF+ Certification</h3>
+                    <p class="certificate-description">Achieved on July 26, 2024 – Validates foundational knowledge in
+                        IT concepts including hardware, software, networking, cybersecurity, and troubleshooting.</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificates/cert2.jpg" alt="Introduction to the Data Centre Industry"
+                        onclick="openModal('certificates/cert2.jpg')" class="certificate-image">
+                    <h3 class="certificate-title">Introduction to the Data Centre Industry</h3>
+                    <p class="certificate-description">A foundational course conducted by Digital Halo, covering data
+                        centre operations, infrastructure, design principles, and the industry's role in digital
+                        ecosystems.</p>
+                </div>
+                <div class="certificate-item">
+                    <img src="certificates/cert3.png"
+                        alt="WearOS: Emerging Technology for Internet and Learning of Everything"
+                        onclick="openModal('certificates/cert3.png')" class="certificate-image">
+                    <h3 class="certificate-title">WearOS: Emerging Technology for Internet and Learning of Everything
+                    </h3>
+                    <p class="certificate-description">Completed in November 2024 – Explored the use of WearOS in smart
+                        devices and its role in the Internet and Learning of Everything (IoE/LoE) landscape.</p>
+                </div>
+            </div>
+    </div>
+
+
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+
+    <div class="section-practicum" id="final-report">
+        <h1>Practicum</h1>
+        <div class="final-report">
+            <div class="project-container">
+                <div class="report-item">
+                    <img src="images/prodmag1.jpg" alt="User Magnet Checker Page" class="report-image">
+                </div>
+                <h2 class="report-title">User Magnet Checker Page</h2>
+                <p>
+                    A web-based interface for monitoring magnet lapping operations, providing real-time data tracking,
+                    visual dashboards, and automated alerts to ensure quality control and support informed
+                    decision-making by operators and engineers.
+                </p>
+            </div>
+            <div class="project-container">
+                <div class="report-item">
+                    <img src="images/prodmag2.jpg" alt="User Records Viewing Page" class="report-image">
+                </div>
+                <h2 class="report-title">User Records Viewing Page</h2>
+                <p>
+                    A centralized log for tracking operator activity and lot history, detailing measurements,
+                    adjustments, and quality judgments to ensure traceability, accountability, and compliance in magnet
+                    manufacturing.
+                </p>
+            </div>
+            <div class="project-container">
+                <div class="report-item">
+                    <img src="images/prodmag3.jpg" alt="User Records Viewing Page" class="report-image">
+                </div>
+                <h2 class="report-title">Admin Manage Models Page</h2>
+                <p>
+                    A web-based tool for administrators to manage magnet model data, including specifications like
+                    flatness and height. It allows adding, editing, or deleting models with safeguards to ensure
+                    accurate and secure data management.
+                </p>
+            </div>
+            <div class="project-container">
+                <div class="report-item">
+                    <img src="images/prodmag4.png" alt="User Records Viewing Page" class="report-image">
+                </div>
+                <h2 class="report-title">Admin Records Search Page</h2>
+                <p>
+                    A web interface for administrators to search, view, and manage detailed magnet data records, with
+                    advanced filters and measurement breakdowns to support quality control, validation, and
+                    traceability.
+                </p>
+            </div>
+        </div>
+        <div class="section-practicum">
+            <h2>About this website project</h2>
+            <p>This project involves transforming the current magnet checking process from a manual, Excel-based system
+                into a streamlined web application with a centralized database. This new system enhances data accuracy,
+                accessibility, and efficiency by allowing users to input, manage, and review magnet model specifications
+                and inspection records through a user-friendly interface. By centralizing the data, the application
+                eliminates issues related to version control, data loss, and inconsistent formatting, while also
+                providing secure access, improved traceability, and better oversight for administrators. This upgrade
+                modernizes their workflow and lays the foundation for more scalable and reliable quality control
+                operations. </p>
+
+        </div>
+        <div class="section-practicum">
+            <h2>Synthesis of the Practicum Engagement</h2>
+            <p>This project transformed a manual, Excel-based magnet inspection workflow into a centralized, web-based
+                system, improving data accuracy, usability, and efficiency. Developed using Visual Studio Code and
+                deployed
+                on a local XAMPP server, the system addressed issues such as version control, inconsistent formatting,
+                and
+                accidental data loss.</p>
+
+            <p>Designed for touchscreen tablets, the interface is simple, responsive, and tailored for industrial
+                environments. Features include real-time alerts, visual charts, and searchable history logs, enhancing
+                both
+                usability and decision-making.</p>
+
+            <p>The system supports role-based access, separating operators from administrators to maintain data security
+                and streamline workflows. Key functions include data entry, model management, and inspection review.</p>
+
+            <p>Development challenges like data validation and UI complexity were addressed through testing and
+                optimization. The final product is reliable, scalable, and ready for future enhancements like remote
+                access
+                and cloud deployment, marking a major step forward in production quality and digital transformation.</p>
+
+        </div>
+    </div>
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+
+
+    <div class="section" id="appendices">
+        <h2>Appendices</h2>
+        <div class="appendices">
+            <div class="appendix-item" onclick="openModal('images/appendix1.jpg')">Competency-Based CV</div>
+            <div class="appendix-item" onclick="openModal('images/appendix2.jpg')">Endorsement Letter</div>
+            <div class="appendix-item" onclick="openModal('images/appendix3.jpg')">Practicum Acceptance</div>
+            <div class="appendix-item" onclick="openModal('images/appendix4.jpg')">Liability Waiver</div>
+            <div class="appendix-item" onclick="openModal('images/training-plan.jpg')">Training Plan</div>
+            <div class="appendix-item" onclick="openModal('images/weekly-journal.jpg')">Complete Weekly Journal</div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Appendix Document">
+        </div>
+    </div>
+
+    <hr style="border: none; height: 3px; background-color: #3a3333; margin: 5px 0;">
+
+
+    <div class="footer" id="contact">
+        <p>I'm always open to new opportunities in IT development. Whether you need a technical solution or just love to
+            hear from me, Let's build something great together.</p><br>
+        <p>Connect With Me on</p><br>
+        <p>Email: jasonmiran09@gmail.com</p>
+        <p>Phone Number: +639123123123</p>
+        <br>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com/your-github-username" target="_blank" class="social-link">GitHub</a>
+        </div>
+        <a href="assets/MIRAN_CV_2025.pdf" download="MIRAN_CV_2025.pdf" class="cv-button">Get my CV</a>
+
+    </div>
+
+    <script>
+        // Navigation active section highlighting
+        function updateActiveNavLink() {
+            const sections = ['about', 'projects', 'certificates', 'final-report', 'appendices'];
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let currentSection = '';
+
+            // Check which section is currently in view
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    // If section is in viewport (with some offset for better UX)
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        currentSection = sectionId;
+                    }
+                }
+            });
+
+            // Update active class on nav links
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        function initSmoothScrolling() {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            initSmoothScrolling();
+            updateActiveNavLink();
+
+            // Update active nav link on scroll
+            window.addEventListener('scroll', updateActiveNavLink);
+        });
+
+        function typeWriter() {
+            const text = "Jason Rey B. Miran";
+            const typedTextElement = document.getElementById("typed-text");
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    typedTextElement.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100); // Adjust speed here (100ms = fast, 200ms = slower)
+                }
+            }
+
+            // Start typing after a short delay
+            setTimeout(type, 1000);
+        }
+
+        let currentPDFUrl = '';
+
+        // PDF Modal functions
+        function openPDFModal(pdfUrl, title) {
+            const modal = document.getElementById('pdfModal');
+            const pdfViewer = document.getElementById('pdfViewer');
+            const modalTitle = document.getElementById('pdfModalTitle');
+
+            currentPDFUrl = pdfUrl;
+            modalTitle.textContent = title;
+            pdfViewer.src = pdfUrl;
+            modal.style.display = 'block';
+
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePDFModal() {
+            const modal = document.getElementById('pdfModal');
+            const pdfViewer = document.getElementById('pdfViewer');
+
+            modal.style.display = 'none';
+            pdfViewer.src = ''; // Clear the PDF to stop loading
+
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        function downloadPDF() {
+            if (currentPDFUrl) {
+                const link = document.createElement('a');
+                link.href = currentPDFUrl;
+                link.download = currentPDFUrl.split('/').pop(); // Get filename from URL
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+
+        // Close PDF modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('pdfModal');
+            const imageModal = document.getElementById('imageModal');
+
+            if (event.target === modal) {
+                closePDFModal();
+            } else if (event.target === imageModal) {
+                closeModal();
+            }
+        }
+
+        // Close modals with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closePDFModal();
+                closeModal();
+            }
+        });
+
+        // Start the animation when the page loads
+        document.addEventListener('DOMContentLoaded', typeWriter);
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'assets/MIRAN_CV_2025.pdf';
+            link.download = 'MIRAN_CV_2025.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Modal functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+
+            modalImage.src = imageSrc;
+            modal.style.display = 'block';
+
+            // Prevent body scrolling when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+
+            // Restore body scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function (event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Existing functions...
+        function typeWriter() {
+            const text = "Jason Rey B. Miran";
+            const typedTextElement = document.getElementById("typed-text");
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    typedTextElement.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                }
+            }
+
+            setTimeout(type, 1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', typeWriter);
+
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'assets/MIRAN_CV_2025.pdf';
+            link.download = 'MIRAN_CV_2025.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        function toggleDescription(button, event) {
+            // Prevent the project container click event from firing
+            event.stopPropagation();
+
+            const container = button.parentElement;
+            const preview = container.querySelector('.description-preview');
+            const full = container.querySelector('.description-full');
+
+            if (preview.style.display !== 'none') {
+                // Show full description
+                preview.style.display = 'none';
+                full.style.display = 'inline';
+                button.textContent = 'See Less';
+            } else {
+                // Show preview description
+                preview.style.display = 'inline';
+                full.style.display = 'none';
+                button.textContent = 'See More';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
