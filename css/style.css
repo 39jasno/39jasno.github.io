@@ -252,6 +252,11 @@ nav a {
     background-color: #f8f9fa;
 }
 
+.modal-screenshot {
+    max-width: 1300px;
+    border-radius: 10px;
+}
+
 .modal-header h3 {
     margin: 0;
     color: #333;
@@ -801,7 +806,7 @@ nav a {
 .hardware-category {
     margin-bottom: 25px;
     padding: 15px;
-    background-color: #d6d6d6;
+    background-color: #f5f5f5;
     border-radius: 8px;
     border-left: 4px solid #3a3333;
 }
@@ -811,7 +816,7 @@ nav a {
 .hardware-category h5 {
     color: #3a3333;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .feature-list{

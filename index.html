@@ -225,7 +225,7 @@
             <div class="project-container" onclick="openAQMSModal()">
                 <img src="images/aqms.jpg" alt="Air Quality Checking and Tracking for Environmental Compliance"
                     class="project-image">
-                <div class="skill-tags">
+                <div class="skill-tags-project">
                     <span class="skill-tag">IoT</span>
                     <span class="skill-tag">C++</span>
                     <span class="skill-tag">PHP</span>
@@ -238,8 +238,7 @@
                 <div class="project-description-container">
                     <p class="project-description">
                         <span class="description-preview">This project involved the development and deployment of an Air
-                            Quality Monitoring System designed to assist Cabuyao City in independently monitoring air
-                            pollution levels in compliance with the Philippine Clean Air Act...</span>
+                            Quality Monitoring System designed...</span>
                         <span class="description-full" style="display: none;">This capstone project represents a
                             comprehensive IoT-based solution for environmental monitoring. Click to view detailed
                             information about features, implementation, and technical specifications.</span>
@@ -259,7 +258,7 @@
                     </div>
                     <div class="aqms-modal-body">
                         <div class="modal-section">
-                            <h4>Discussion of Features</h4>
+                            <h2>Discussion of Features</h2>
                             <br>
                             <div id="aqmsFeaturesContent">
                                 <div class="feature-category">
@@ -277,65 +276,62 @@
                                     <h5>Data Management & Analytics</h5>
                                     <ul class="feature-list">
                                         <li>Centralized database for historical data storage</li>
-                                        <li>Trend analysis and pattern recognition</li>
+                                        <li>Trend analysis</li>
                                         <li>Automated report generation (daily, weekly, monthly)</li>
                                         <li>Data export functionality for government compliance</li>
-                                        <li>Alert system for pollution threshold breaches</li>
                                         <li>Comparative analysis with Philippine Clean Air Act standards</li>
                                     </ul>
                                 </div>
                                 <div class="feature-category">
                                     <h5>User Interface & Accessibility</h5>
                                     <ul class="feature-list">
-                                        <li>Web-based dashboard for city officials</li>
+                                        <li>Web-based dashboard for the public</li>
                                         <li>Mobile-responsive design for field access</li>
-                                        <li>Real-time data visualization with charts and graphs</li>
-                                        <li>Multi-user access with role-based permissions</li>
+                                        <li>Real-time data visualization with graphs</li>
                                         <li>Public transparency portal for citizen access</li>
-                                        <li>Notification system for critical air quality events</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         <div class="modal-section">
-                            <h4>Screenshots of the GUI</h4>
+                            <h2>Screenshots of the GUI</h2>
                             <div id="aqmsScreenshotsContent" class="screenshots-gallery">
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-dashboard.jpg" alt="Main Dashboard" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-dashboard.jpg')">
+                                    <img src="images/aqms-dashboard.png" alt="Main Dashboard" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-dashboard.png')">
                                     <p>Main Dashboard - Real-time Air Quality Overview</p>
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-charts.jpg" alt="Data Visualization" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-charts.jpg')">
-                                    <p>Data Visualization - Trend Analysis Charts</p>
+                                    <img src="images/aqms-history.png" alt="Data History" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-history.png')">
+                                    <p>Data History – Recorded Air Quality Logs</p>
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-reports.jpg" alt="Reports Section" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-reports.jpg')">
-                                    <p>Reports Section - Compliance Documentation</p>
+                                    <img src="images/aqms-information.png" alt="Information Center" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-information.png')">
+                                    <p>Information Center – Air Quality, Pollutants & Health Risks</p>
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-alerts.jpg" alt="Alert System" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-alerts.jpg')">
-                                    <p>Alert System - Threshold Notifications</p>
+                                    <img src="images/aqms-about.png" alt="About" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-about.png')">
+                                    <p>About – ACHTECO Overview, Sensors Used & Development Team</p>
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-mobile.jpg" alt="Mobile Interface" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-mobile.jpg')">
-                                    <p>Mobile Interface - Field Access View</p>
+                                    <img src="images/aqms-admin.png" alt="Admin Access" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-admin.png')">
+                                    <p>Admin Access – Secure Role-Based Login</p>
                                 </div>
                                 <div class="screenshot-item">
-                                    <img src="images/aqms-admin.jpg" alt="Admin Panel" class="modal-screenshot"
-                                        onclick="openModal('images/aqms-admin.jpg')">
-                                    <p>Admin Panel - System Configuration</p>
+                                    <img src="images/aqms-admin-dashboard.png" alt=Admin Dashboard" class="modal-screenshot"
+                                        onclick="openModal('images/aqms-admin-dashboard.png')">
+                                    <p>Admin Dashboard – Device Management & System Control</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="modal-section">
-                            <h4>Software Used</h4>
+                            <h2>Software Used</h2>
                             <div id="aqmsSoftwareContent">
                                 <div class="software-category">
                                     <h5>Development Environment</h5>
@@ -343,12 +339,11 @@
                                         <li><strong>Visual Studio Code</strong> - Primary IDE for web development</li>
                                         <li><strong>Arduino IDE</strong> - IoT sensor programming and configuration</li>
                                         <li><strong>XAMPP</strong> - Local development server environment</li>
-                                        <li><strong>Git</strong> - Version control and collaboration</li>
                                     </ul>
                                 </div>
                                 <div class="software-category">
                                     <h5>Backend Technologies</h5>
-                                    <ul>
+                                    <ul class="feature-list">
                                         <li><strong>PHP 8.0</strong> - Server-side scripting and API development</li>
                                         <li><strong>MySQL 8.0</strong> - Database management and data storage</li>
                                         <li><strong>Apache HTTP Server</strong> - Web server deployment</li>
@@ -360,25 +355,15 @@
                                     <ul class="feature-list">
                                         <li><strong>HTML5/CSS3</strong> - Structure and styling</li>
                                         <li><strong>JavaScript (ES6+)</strong> - Interactive functionality</li>
-                                        <li><strong>Bootstrap 5</strong> - Responsive design framework</li>
                                         <li><strong>Chart.js</strong> - Data visualization and graphing</li>
                                         <li><strong>jQuery</strong> - DOM manipulation and AJAX requests</li>
-                                    </ul>
-                                </div>
-                                <div class="software-category">
-                                    <h5>Additional Libraries & Tools</h5>
-                                    <ul class="feature-list">
-                                        <li><strong>SweetAlert2</strong> - Enhanced user notifications</li>
-                                        <li><strong>DataTables</strong> - Advanced table functionality</li>
-                                        <li><strong>Moment.js</strong> - Date and time manipulation</li>
-                                        <li><strong>PHPMailer</strong> - Email notification system</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         <div class="modal-section">
-                            <h4>Hardware Used</h4>
+                            <h2>Hardware Used</h2>
                             <div id="aqmsHardwareContent">
                                 <div class="hardware-category">
                                     <h5>IoT Sensors & Microcontrollers</h5>
@@ -386,10 +371,10 @@
                                         <li><strong>ESP32 Development Board</strong> - Main microcontroller with WiFi
                                             capability</li>
                                         <li><strong>MQ-7 Gas Sensor</strong> - Carbon Monoxide (CO) detection</li>
-                                        <li><strong>MQ-135 Air Quality Sensor</strong> - CO2, NH3, NOx, and other gases
+                                        <li><strong>MQ-135 Air Quality Sensor</strong> - CO2, NO2
                                         </li>
                                         <li><strong>DHT22 Sensor</strong> - Temperature and humidity monitoring</li>
-                                        <li><strong>MQ-131 Ozone Sensor</strong> - Ground-level ozone detection</li>
+                                        <li><strong>MQ-2 Sensor</strong> - Sulfur Dioxed</li>
                                         <li><strong>Particulate Matter Sensor (PMS5003)</strong> - PM2.5 and PM10
                                             measurement</li>
                                     </ul>
@@ -397,31 +382,21 @@
                                 <div class="hardware-category">
                                     <h5>Power & Connectivity</h5>
                                     <ul class="feature-list">
-                                        <li><strong>Solar Panel (20W)</strong> - Sustainable power source</li>
-                                        <li><strong>12V Rechargeable Battery</strong> - Backup power system</li>
-                                        <li><strong>Charge Controller</strong> - Battery management and protection</li>
-                                        <li><strong>WiFi Router</strong> - Network connectivity for data transmission
+                                        <li><strong>Rechargeable Battery 3.7v 18650 </strong> - Backup power system</li>
+                                        <li><strong>DC/DC Voltage Regulator and Converter </strong> - Battery management
+                                            and protection</li>
+                                        <li><strong>WiFi Broadband</strong> - Network connectivity for data transmission
                                         </li>
-                                        <li><strong>4G LTE Module</strong> - Backup internet connectivity</li>
                                     </ul>
                                 </div>
                                 <div class="hardware-category">
                                     <h5>Housing & Protection</h5>
                                     <ul class="feature-list">
-                                        <li><strong>Weather-resistant Enclosure</strong> - IP65 rated protection</li>
+                                        <li><strong>Encasing IP65 Weatherproof (240x160x92mm) </strong> - IP65 rated protection</li>
                                         <li><strong>Ventilation System</strong> - Proper air flow for accurate readings
                                         </li>
                                         <li><strong>Mounting Hardware</strong> - Secure installation equipment</li>
-                                        <li><strong>Lightning Protection</strong> - Surge protection devices</li>
-                                    </ul>
-                                </div>
-                                <div class="hardware-category">
-                                    <h5>Server & Network Infrastructure</h5>
-                                    <ul class="feature-list">
-                                        <li><strong>Dedicated Server</strong> - Data processing and web hosting</li>
-                                        <li><strong>Network Switch</strong> - Local network management</li>
-                                        <li><strong>UPS System</strong> - Uninterruptible power supply</li>
-                                        <li><strong>Backup Storage</strong> - Data redundancy and recovery</li>
+                                        <li><strong>DC/DC Voltage Regulator and Converter </strong> - Surge protection devices</li>
                                     </ul>
                                 </div>
                             </div>
@@ -437,7 +412,6 @@
                                     <li>Initial assessment of current environmental monitoring challenges</li>
                                     <li>Requirements gathering sessions with city officials</li>
                                     <li>Site surveys for optimal sensor placement locations</li>
-                                    <li>Training sessions for CENRO staff on system operation</li>
                                     <li>Ongoing technical support and system maintenance planning</li>
                                     <li>Compliance verification with Philippine Clean Air Act standards</li>
                                 </ul>
@@ -445,7 +419,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button onclick="downloadAQMSReport()" class="download-btn">Download Project Report</button>
+                        <button onclick="downloadAQMSReport()" class="download-btn">Download Project Overview</button>
                     </div>
                 </div>
             </div>
@@ -933,7 +907,7 @@
         function downloadAQMSReport() {
             // Add your AQMS report download functionality here
             const link = document.createElement('a');
-            link.href = 'assets/aqms-full-report.pdf';
+            link.href = 'assets/aqms.pdf';
             link.download = 'AQMS-Capstone-Project-Report.pdf';
             document.body.appendChild(link);
             link.click();
