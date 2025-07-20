@@ -351,7 +351,7 @@ nav a {
     justify-content: center;
     color: #3a3333;
     overflow: hidden;
-    border-radius: 10px ;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
@@ -584,7 +584,7 @@ nav a {
 }
 
 .skill-category {
-    background: #f5f5f5;
+    background: #d6d6d6;
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -616,6 +616,14 @@ nav a {
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
+}
+
+
+.skill-tags-project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-left: 10px;
 }
 
 .skill-tag {
@@ -773,4 +781,59 @@ nav a {
 
 .project-link:hover::after {
     opacity: 1;
+}
+
+/* AQMS Modal Specific Styles */
+.aqms-modal-content {
+    max-width: 95%;
+    max-height: 95%;
+    overflow-y: auto;
+    background-color: #d6d6d6;
+}
+
+.aqms-modal-body {
+    padding: 25px;
+    line-height: 1.6;
+}
+
+.feature-category,
+.software-category,
+.hardware-category {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #d6d6d6;
+    border-radius: 8px;
+    border-left: 4px solid #3a3333;
+}
+
+.feature-category h5,
+.software-category h5,
+.hardware-category h5 {
+    color: #3a3333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-list{
+    margin-left: 20px;
+}
+
+.screenshot-item {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.screenshot-item p {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+.collaboration-content {
+    background-color: #e8f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #17a2b8;
+    
 }
