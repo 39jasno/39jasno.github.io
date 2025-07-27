@@ -842,3 +842,15 @@ nav a {
     border-left: 4px solid #17a2b8;
     
 }
+
+.section-aboutme {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+
+}
+
+.section-aboutme p {
+    color: #3a3333;
+    line-height: 2.0;
+    font-weight: 520;
+}
