@@ -113,6 +113,17 @@ nav a {
     background-color: #d6d6d6;
 }
 
+.section-aboutme-div {
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    background-color: #d6d6d6;
+}
+
+.section-aboutme-div h2 {
+    color: #3a3333;
+}
+
+
 
 .section h2 {
     color: #3a3333;
@@ -402,6 +413,7 @@ nav a {
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .certificate-item {
@@ -431,6 +443,7 @@ nav a {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 
 .certificate-image:hover {
     transform: scale(1.05);
@@ -706,6 +719,8 @@ nav a {
     max-height: 85vh;
     object-fit: contain;
     display: block;
+    background-color: #d6d6d6;
+    
 }
 
 .close {
@@ -819,7 +834,7 @@ nav a {
     font-weight: 1000;
 }
 
-.feature-list{
+.feature-list {
     margin-left: 20px;
 }
 
@@ -840,12 +855,11 @@ nav a {
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid #17a2b8;
-    
+
 }
 
 .section-aboutme {
     padding: 20px;
-    /* margin-bottom: 20px; */
 
 }
 

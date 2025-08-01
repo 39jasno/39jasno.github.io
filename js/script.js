@@ -1,5 +1,5 @@
 function updateActiveNavLink() {
-    const sections = ['about', 'projects', 'certificates', 'final-report', 'appendices'];
+    const sections = ['about', 'projects', 'certificates', 'final-report', 'aboutme'];
     const navLinks = document.querySelectorAll('.nav-link');
 
     let currentSection = '';
